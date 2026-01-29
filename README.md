@@ -12,7 +12,6 @@ graph LR
     end
     
     subgraph "Speed Layer"
-        Kafka --> SparkStream[Spark Streaming Job]
         SparkStream --> Mongo[MongoDB]
     end
     
